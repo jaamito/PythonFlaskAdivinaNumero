@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% set title ='Adivina el número' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+
+<body>
+    <h2>Adivina el número</h2>
+ 
+    <div class="missatge">
+        {{missatge|safe}}
+    </div>
+    <br>
+ 
+    <form method="post">
+        Introdueix un número: <input type="value" name="number" /><br>
+        <input type="submit">
+    </form>
+</body>
+
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

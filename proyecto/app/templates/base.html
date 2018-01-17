@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <head>
+    {% block head %}
+    {% endblock %}
+  </head>
+    {% if title %}
+      {{title}}
+    {% else %}
+      App's con Flask
+    {% endif %}
+      <nav>
+        <ul>
+          <li><a href="./">Índice</a></li>
+      	  <li><a href="./ludopata">Adivina el número</a></li>
+        </ul>
+      </nav>
+      {% block content %}
+      {% endblock %}
+      <footer>
+        {% block footer %}
+        {% endblock %}
+      </footer>
